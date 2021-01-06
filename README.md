@@ -41,3 +41,22 @@ curl -LO https://github.com/prometheus/prometheus/releases/donwload/v2.0.0/prome
 
 tar -xvzf prometheus-2.0.0.linux-amd64.tar.gz
 
+
+cd prometheus-2.0.0.linux-amd64
+
+cp prometheus /usr/local/bin
+
+cp promtool /usr/local/bin
+
+chown prometheus:prometheus /usr/local/bin/prometheus
+
+chown prometheus:prometheus /usr/local/bin/promtool
+
+cp -R consoles /etc/prometheus
+
+cp -R consoles_libraries /etc/prometheus
+
+para criar, colar e editar as configurações do prometheus
+
+vim /etc/prometheus/prometheus.yml
+
